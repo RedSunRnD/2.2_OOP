@@ -41,4 +41,23 @@ public abstract class Hogwarts {
     public void printStudent() {
         System.out.println("Имя: " + getName() + "; Студент факультета " + getFaculty()  + "; Сила магии: " + getMagicPower() + "; Расстояние трансгрессии: " + getTransgressiveDistance() + ";");
         }
+
+    public int totalScore() {
+        return getMagicPower() + getTransgressiveDistance();
+    }
+
+    public static void compare(Hogwarts studentOne, Hogwarts studentTwo) {
+        if (studentOne.totalScore() > studentTwo.totalScore()) {
+            System.out.println(studentOne.getName() + " более сильный волшебник, чем " + studentTwo.getName() + ".");
+        } else if (studentOne.totalScore() < studentTwo.totalScore()) {
+            System.out.println(studentTwo.getName() + " более сильный волшебник, чем " + studentOne.getName() + ".");
+        } else {
+            System.out.println("Сила этих волшебников равна");
+        }
+        System.out.println();
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
 }

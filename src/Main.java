@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-                Gryffindor harryPotter = new Gryffindor("Гарри Поттер", 24, 13, 25, 48, 55);
+                Gryffindor harryPotter = new Gryffindor("Гарри Поттер", 100, 100, 100, 100, 100);
                 Gryffindor hermioneGranger = new Gryffindor("Гермиона Грейнджер", 58, 22, 67, 45, 98);
                 Gryffindor ronaldWeasley = new Gryffindor("Рон Уизли", 12, 65, 47, 41, 23);
                 Slytherin dracoMalfoy = new Slytherin("Драко Малфой", 25, 65, 87, 47, 65, 22, 78);
@@ -20,5 +20,6 @@ public class Main {
                 Slytherin.compare(grahamMontague,gregoreGoyle);
                 Hufflepuff.compare(cedricDiggory,justinFinchFletchley);
                 Ravenclaw.compare(padmaPatil,marcusBelby);
+                Hogwarts.compare(harryPotter,dracoMalfoy);
     }
 }
