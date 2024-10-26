@@ -1,7 +1,12 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private int magicPower;
     private int transgressiveDistance;
+    private String faculty;
+
+    public String getFaculty() {
+        return faculty;
+    }
 
     public Hogwarts(String name, int magicPower, int transgressiveDistance) {
         this.name = name;
@@ -32,4 +37,8 @@ public class Hogwarts {
     public void setTransgressiveDistance(int transgressiveDistance) {
         this.transgressiveDistance = transgressiveDistance;
     }
+
+    public void printStudent() {
+        System.out.println("Имя: " + getName() + "; Студент факультета " + getFaculty()  + "; Сила магии: " + getMagicPower() + "; Расстояние трансгрессии: " + getTransgressiveDistance() + ";");
+        }
 }

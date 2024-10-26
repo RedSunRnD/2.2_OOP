@@ -1,9 +1,9 @@
 public class Slytherin extends Hogwarts {
-    int cunning;
-    int determination;
-    int ambition;
-    int resourcefulness;
-    int thirstForPower;
+    private int cunning;
+    private int determination;
+    private int ambition;
+    private int resourcefulness;
+    private int thirstForPower;
 
     public Slytherin(String name, int magicPower, int transgressiveDistance, int cunning, int determination, int ambition, int resourcefulness, int thirstForPower) {
         super(name, magicPower, transgressiveDistance);
@@ -12,6 +12,11 @@ public class Slytherin extends Hogwarts {
         this.ambition = ambition;
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
+    }
+
+    public String getFaculty() {
+        String faculty = "Слизерин";
+        return faculty;
     }
 
     public int getCunning() {
@@ -52,5 +57,11 @@ public class Slytherin extends Hogwarts {
 
     public void setThirstForPower(int thirstForPower) {
         this.thirstForPower = thirstForPower;
+    }
+
+    public void printStudent() {
+        super.printStudent();
+        System.out.println("Хитрость " + getCunning() + "; Решительность " + getDetermination() + "; Амбициозность " + getAmbition() + "; Находчивость " + getResourcefulness() + "; Жажда власти " + getThirstForPower() + "." );
+        System.out.println();
     }
 }
