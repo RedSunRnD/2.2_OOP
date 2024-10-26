@@ -16,5 +16,9 @@ public class Main {
                 dracoMalfoy.printStudent();
                 zachariasSmith.printStudent();
                 choChang.printStudent();
+                Gryffindor.compare(ronaldWeasley,hermioneGranger);
+                Slytherin.compare(grahamMontague,gregoreGoyle);
+                Hufflepuff.compare(cedricDiggory,justinFinchFletchley);
+                Ravenclaw.compare(padmaPatil,marcusBelby);
     }
 }
